@@ -21,7 +21,9 @@ const Navbar = () => {
                 <button onClick={() => {
                     navigate('/register')
                 }}>Apply to drive</button>
-                <a href="">Login</a>
+                <a href="" onClick={() => {
+                  navigate('/login')
+                }}>Login</a>
             </div>
         </div>
     </div>

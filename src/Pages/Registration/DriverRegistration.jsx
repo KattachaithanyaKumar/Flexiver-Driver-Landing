@@ -1,8 +1,10 @@
 import "./registration.css";
 
 import logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const DriverRegistration = () => {
+    const navigate = useNavigate();
   return (
     <div>
         <div className="nav">
@@ -13,6 +15,10 @@ const DriverRegistration = () => {
             <div className="register-content">
                 <h1 className="heading2">Welcome to the Flexivr Extravaganza!</h1>
                 <p>So, you wanna join the PicUp team of rockstar flexers? Awesome choice! But first, let's jazz up the details. 🎉</p>
+
+                <a onClick={() => {
+                    navigate("/dashboard");
+                }}>Login?</a>
 
                 <h1 className="heading">What You Gotta Bring to the flex Party:</h1>
                 <div className="content">

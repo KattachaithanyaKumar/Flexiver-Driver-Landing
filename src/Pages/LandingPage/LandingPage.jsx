@@ -18,11 +18,6 @@ import { useNavigate } from "react-router-dom";
 const LandingPage = () => {
     const navigate = useNavigate(); 
 
-    const goToRegistration = () => {
-        navigate("/register"); 
-    };
-
-
     useEffect(() => {
         Aos.init();
     }, [])
